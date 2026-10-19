@@ -1,0 +1,45 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css");
+@import "tailwindcss";
+@plugin "@iconify/tailwind4";
+
+
+/* 1. Importar tus fuentes locales */
+@font-face {
+    font-family: 'nombreLu';
+    src: url('/fonts/Abalone\ Smile.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Informacion';
+    src: url('/fonts/BalooThambi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'baby';
+    src: url('/fonts/MonaSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url('/fonts/Bright\ Sunlist\ DEMO\ VERSION.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'cursiva';
+    src: url('/fonts/MeowScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'mensaje';
+    src: url('/fonts/MonimerSerif_PERSONAL_USE_ONLY.otf') format('opentype');
+}
+
+/* 2. Registrar la fuente en el tema de Tailwind v4 */
+@theme {
+    --font-nombre: 'nombreLu', sans-serif; 
+    --font-informacion: 'Informacion', sans-serif; 
+    --font-baby: 'baby', sans-serif; 
+    --font-titulo: 'titulo', sans-serif;
+    --font-cursiva: 'cursiva', sans-serif;
+    --font-mensaje: 'mensaje', sans-serif;
+}
